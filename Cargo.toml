@@ -1,0 +1,25 @@
+[package]
+name = "ierc20_mint_rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = { version = "2.0.11", features = ["rustls"] }
+tokio = { version = "1.34.0", features = ["full"] }
+# Flexible concrete Error Reporting type built on std::error::Error with customizable Reports
+eyre = "0.6.9"
+chrono = "0.4.31"
+bytes = "1.5.0"
+rayon = { version = "1.8", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+envy = "0.4"
+log = "0.4.17"
+anyhow = "1.0.44"
+dotenv = "0.15.0"
+lazy_static = { version = "1.4.0", features = [] }
+colored = "2.0.4"
+fern = {version = "0.6.2", features = ["colored"]}
+indoc = "2.0.4"
+num_cpus = "1.16.0"
